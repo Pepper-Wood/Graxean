@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Night Mares - Closed Original Species</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,14 +30,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="">GRAXEONS</a>
+        <a class="brand" href="">NIGHT MARES</a>
         <div class="nav-collapse" id="main-menu">
           <ul class="nav" id="main-menu-left">
-            <li><a href="#">Species Lore</a></li>
-            <li><a href="#">Traits</a></li>
+            <li><a href="#" style="text-decoration: line-through;">Species Lore</a></li>
+            <li><a href="#" style="text-decoration: line-through;">Traits</a></li>
           </ul>
           <ul class="nav pull-right" id="main-menu-right">
-            <li><a href="#">Custom Prices</a></li>
+            <li><a href="#" style="text-decoration: line-through;">Custom Prices</a></li>
           </ul>
         </div>
       </div>
@@ -45,7 +45,9 @@
   </div>
 
   <!-- Page Content -->
-  <div class="container">
+  <div class="container-fluid">
+    <center><h1>Night Mares</h1><h2>The Original Closed Species of your Dreams <3</h2></center>
+    <!--
     <div class="row carousel-holder">
       <div class="col-md-12">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -68,19 +70,26 @@
         </div>
       </div>
     </div>
+    -->
     <div class="row">
-      <div id="graxeanOutput"></div>
-      <!-- Last Button -->
-      <div class="col-sm-4 col-lg-4 col-md-4">
+      <div class="col-sm-3 col-lg-3 col-md-3">
         <h4>Want to give your feedback?</h4>
-        <p>If you want to provide testimonial for the designs shown, please fill out <a target='_blank' href='#'>this form</a>. Any and all comments are appreciated :)</p>
-        <a class="btn btn-primary" target="_blank" href="#">View Form</a>
-        <a class="btn btn-primary" target="_blank" href="#">Send Additional Comments</a>
+        <p>If you want to provide testimonial for the designs shown, please fill out <a target='_blank' href='https://goo.gl/forms/vJRlwiJYqbQqFuyT2'>this form</a>. Any and all comments are appreciated :)</p>
+        <a class="btn btn-primary" target="_blank" href="https://goo.gl/forms/vJRlwiJYqbQqFuyT2">View Form</a>
       </div>
+      <div class="col-sm-3 col-lg-3 col-md-3">
+        <h4>Want to purchase an open Night Mare?</h4>
+        <p>Send a note to my deviantArt account, <a target='_blank' href='http://pepper-wood.deviantart.com/'>Pepper-Wood</a>, for follow-up.</p>
+        <a class="btn btn-primary" target="_blank" href="http://pepper-wood.deviantart.com/">Go to Pepper-Wood</a>
+        <p>Also pardon that the images on the modal carousels aren't loading properly. I have no idea what's wrong rip</p>
+      </div>
+      <div id="nightmaresOutput"></div>
     </div>
   </div>
   <!-- /.container -->
 
+  <div id="modalOutput"></div>
+  
   <div class="container">
     <hr>
     <footer>
@@ -97,34 +106,68 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/taffy.js"></script>
   <script>
-    var graxeans = TAFFY();
-    graxeans.insert({"name":"one","price":149.99,"img":"","description":"","votes":0,"stars":1});
-    graxeans.insert({"name":"two","price":149.99,"img":"","description":"","votes":0,"stars":0});
-    graxeans.insert({"name":"three","price":149.99,"img":"","description":"","votes":0,"stars":0});
-    graxeans.insert({"name":"four","price":149.99,"img":"","description":"","votes":0,"stars":0});
+    var nightmares = TAFFY();
+    nightmares.insert({"count":5,"name":"Bowtie","price":149.99,"img":"bowtie","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":2,"name":"Calicopia","price":149.99,"img":"calicopia","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":2,"name":"Edgelord","price":149.99,"img":"edgelord","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":2,"name":"Eyeris","price":149.99,"img":"eyeris","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":3,"name":"Firestarter","price":149.99,"img":"firestarter","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":2,"name":"Flying Fish","price":149.99,"img":"flyingFish","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":2,"name":"Grassy Meadow","price":149.99,"img":"grassyMeadow","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":3,"name":"Moss","price":149.99,"img":"moss","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":4,"name":"Totally-Not-Pikachu","price":149.99,"img":"pikachu","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":2,"name":"Polka Dottie","price":149.99,"img":"polkaDottie","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":3,"name":"Pri-Mare-Y","price":149.99,"img":"primarey","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":2,"name":"Redeye Dottie","price":149.99,"img":"redeyeDottie","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":2,"name":"Rusty Steve","price":149.99,"img":"rustySteve","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":2,"name":"Soul Wolf","price":149.99,"img":"soulwolf","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":2,"name":"Sparkle Wolf","price":149.99,"img":"sparklewolf","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":2,"name":"Spinaround","price":149.99,"img":"spinda","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":2,"name":"Sportacus","price":149.99,"img":"sportacus","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":5,"name":"Stacy Stockings","price":149.99,"img":"stacyStockings","description":"","votes":0,"stars":0});
+    nightmares.insert({"count":2,"name":"Rare Unicorn Frappe","price":0,"img":"unicornFrappe","description":"I'm keeping this one :)","votes":0,"stars":0});
+    nightmares.insert({"count":2,"name":"X-Game","price":149.99,"img":"xgame","description":"","votes":0,"stars":0});
     
-    $(document).ready(function(){
+    $(document).ready (function() {
       var finalString = "";
-      graxeans().each(function (graxean) {
-        finalString += "<div class='col-sm-4 col-lg-4 col-md-4'>";
+      var modalString = "";
+      nightmares().each(function (nightmare) {
+        // shop page construction
+        finalString += "<div class='col-sm-3 col-lg-3 col-md-3'>";
         finalString += "<div class='thumbnail'>";
-        finalString += "<img src='img/" + graxean.img + "' alt=''>";
+        finalString += "<img src='img/mares2/" + nightmare.img + "/1.png' alt=''>";
         finalString += "<div class='caption'>";
-        finalString += "<h4 class='pull-right'>$" + graxean.price + "</h4>";
-        finalString += "<h4>" + graxean.name + "</h4>";
-        finalString += "<p>" + graxean.description + "</p>";
-        finalString += "</div><div class='ratings'>";
-        finalString += "<p class='pull-right'>" + graxean.votes + " votes</p>";
+        finalString += "<h4>" + nightmare.name + "</h4>";
         finalString += "<p>";
-        for (i=0; i<graxean.stars; i++) {
-          finalString += "<span class='glyphicon glyphicon-star'></span>";
+        
+        finalString += "<a data-toggle='modal' href='#bsModal_" + nightmare.img + "' class='btn btn-primary'>More Images</a>";
+        
+        finalString += nightmare.description + "</p>";
+        finalString += "</div><div class='ratings'>";
+        if (nightmare.price != 0) {finalString += "<p class='pull-right' style='color:#00ff00;'>$" + nightmare.price + "</p>"; }
+        else {finalString += "<p class='pull-right' style='color:#ff0000;'>Not For Sale</p>"; }
+        finalString += "<p>" + nightmare.votes + " votes</p>";
+        finalString += "</div></div></div>";
+        
+        // modal construction
+        modalString += "<div class='modal fade' id='bsModal_" + nightmare.img + "' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>";
+        modalString += "<div class='modal-dialog'><div class='modal-content'><div class='modal-header'>";
+        modalString += "<button type='button' class='close' data-dismiss='modal' aria-hidden='true'>×</button>";
+        modalString += "<h4 class='modal-title'>" + nightmare.name + "</h4></div><div class='modal-body'>";
+        
+        modalString += "<div id='carousel-example-generic' class='carousel slide' data-ride='carousel'><div class='carousel-inner'>";
+        modalString += "<div class='item active'><img class='img-responsive' src='img/mares2/" + nightmare.img + "/19.jpg' alt='...'></div>";
+        for (i=2; i<nightmare.count+1; i++) {
+          modalString += "<div class='item'><img class='img-responsive' src='img/mares2/" + nightmare.img + "/" + i + ".jpg' alt='...'></div>";
         }
-        for (i=0; i<(5-graxean.stars); i++) {
-          finalString += "<span class='glyphicon glyphicon-star-empty'></span>";
-        }
-        finalString += "</p></div></div></div>";
+        modalString += "</div><a class='left carousel-control' href='#carousel-example-generic' role='button' data-slide='prev'><span class='glyphicon glyphicon-chevron-left'></span></a>";
+        modalString += "<a class='right carousel-control' href='#carousel-example-generic' role='button' data-slide='next'><span class='glyphicon glyphicon-chevron-right'></span></a></div>";
+        
+        modalString += "</div></div></div></div>";
+        
       });
-      $("#graxeanOutput").html(finalString);
+      $("#nightmaresOutput").html(finalString);
+      $("#modalOutput").html(modalString);
     });
   </script>
 </body>
